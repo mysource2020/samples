@@ -11,6 +11,7 @@ firefilter configuration:
 2. setup network tools.
    root@ubuntu:~# apt update
    root@ubuntu:~# apt install net-tools
+   root@ubuntu:~# apt install unzip
    
 3. setup mysql
    root@ubuntu:~# apt install  mysql-server
@@ -28,6 +29,8 @@ firefilter configuration:
    
    #modify server.xml, eg: server.xml, modify ip, port. (10.12.158.59, 1789)   
    root@ubuntu:/usr/share/tomcat9# cd conf
+   root@ubuntu:/usr/share/tomcat9/conf# killall -9 java
+   root@ubuntu:/usr/share/tomcat9/conf# rm -rf server.xml
    root@ubuntu:/usr/share/tomcat9/conf# vi server.xml
    root@ubuntu:/usr/share/tomcat9/conf# cd ..
    root@ubuntu:/usr/share/tomcat9# rm -rf ./work/Catalina/*
