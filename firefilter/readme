@@ -18,6 +18,48 @@ firefilter configuration:
    run sql in db.sql
    
 4. setup tomcat9   
+   root@ubuntu:~# apt-get install tomcat9-admin
+   root@ubuntu:~# apt-get install tomcat9
+   root@ubuntu:~# cd /usr/share/tomcat9
+   root@ubuntu:/usr/share/tomcat9# mkdir logs
+   root@ubuntu:/usr/share/tomcat9# cp -rf etc conf
+   
+   #modify server.xml, eg: server.xml, modify ip, port. (10.12.158.59, 1789)   
+   root@ubuntu:/usr/share/tomcat9# cd conf
+   root@ubuntu:/usr/share/tomcat9/conf# vi server.xml
+   root@ubuntu:/usr/share/tomcat9/conf# cd ..
+   root@ubuntu:/usr/share/tomcat9# rm -rf ./work/Catalina/*
+   root@ubuntu:/usr/share/tomcat9# rm -rf ./logs/*
+   
+   #upload web.zip to /usr/share/web.zip
+   root@ubuntu:/usr/share/tomcat9# cd /usr/share
+   root@ubuntu:/usr/share# unzip web.zip
+   root@ubuntu:/usr/share# rm -rf web.zip
+   
+   #startup tomcat 9
+   root@ubuntu:/usr/share#   /usr/share/tomcat9/bin/startup.sh   
+   
+   #firewall: open port 1789
+   
+   
+5. manager firefilter
+   a. enter manager http://10.12.158.59:1789
+   b. upload file ffslercr
+   c. config system param and group list.
+   d. startup program
+   
+6. test url redirect.   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
    
    
    
