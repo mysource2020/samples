@@ -33,8 +33,10 @@ firefilter configuration:
    root@ubuntu:/usr/share/tomcat9# rm -rf ./work/Catalina/*
    root@ubuntu:/usr/share/tomcat9# rm -rf ./logs/*
    
-   #upload web.zip to /usr/share/web.zip
+   #download web.zip to /usr/share/web.zip (wget https://github.com/mysource2020/samples/blob/main/firefilter/web.zip)
+   
    root@ubuntu:/usr/share/tomcat9# cd /usr/share
+   root@ubuntu:/usr/share# wget https://github.com/mysource2020/samples/blob/main/firefilter/web.zip
    root@ubuntu:/usr/share# unzip web.zip
    root@ubuntu:/usr/share# rm -rf web.zip
    
