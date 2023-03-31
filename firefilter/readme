@@ -13,4 +13,12 @@ firefilter configuration:
    root@ubuntu:~# apt install net-tools
    
 3. setup mysql
+   root@ubuntu:~# apt install  mysql-server
+   root@ubuntu:~# mysql -u root -p
+   run sql in db.sql
+   
+4. setup tomcat9   
+   
+   
+   
    
