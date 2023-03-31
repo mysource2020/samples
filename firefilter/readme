@@ -1,0 +1,16 @@
+firefilter configuration:
+1. check os version, Ubuntu 22.04.1 LTS be required.
+
+    root@ubuntu:~# lsb_release -a
+    No LSB modules are available.
+    Distributor ID: Ubuntu
+    Description:    Ubuntu 22.04.1 LTS
+    Release:        22.04
+    Codename:       jammy
+    
+2. setup network tools.
+   root@ubuntu:~# apt update
+   root@ubuntu:~# apt install net-tools
+   
+3. setup mysql
+   
