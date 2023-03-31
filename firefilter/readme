@@ -15,7 +15,9 @@ firefilter configuration:
 3. setup mysql
    root@ubuntu:~# apt install  mysql-server
    root@ubuntu:~# mysql -u root -p
-   run sql in db.sql
+   
+   #run sql in db.sql, modify init user/password.
+   #insert into fms_user(id,name,password) values(1, 'test', '123456');
    
 4. setup tomcat9   
    root@ubuntu:~# apt-get install tomcat9-admin
