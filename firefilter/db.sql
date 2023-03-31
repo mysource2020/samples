@@ -46,8 +46,8 @@ insert into fms_group(id,name,path_filter,create_time) values(1,'SYSTEM','',now(
 insert into fms_config values(1,1,5, 'mon',  0, now());
 insert into fms_config values(2,1,5, 'ssh',  0,   now());
 insert into fms_config values(3,1,5, 'ips', '*', now());
-insert into fms_config values(4,1,5, 'out', 'nic', now());
-insert into fms_config values(5,1,5, 'in',  'nic:v2:t1:b1', now());
+insert into fms_config values(4,1,5, 'out', '3', now());
+insert into fms_config values(5,1,5, 'in',  '2:v2:t1:b1', now());
 insert into fms_config values(6,1,5, 'psmin',  100,   now());
 insert into fms_config values(7,1,5, 'psmax',  500,   now());
 insert into fms_config values(8,1,5, 'hpmax',  50,   now());
