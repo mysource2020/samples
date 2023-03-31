@@ -15,8 +15,6 @@ create table fms_user
 	status   INT default 1   
 );
 
-insert into fms_user(id,name,password) values(1, 'test', '123456');
-
 create table fms_group
 (
       id           INT PRIMARY KEY,
@@ -42,6 +40,8 @@ create table fms_config
 );
 
 #init data
+insert into fms_user(id,name,password) values(1, 'test', '123456');
+
 insert into fms_group(id,name,path_filter,create_time) values(1,'SYSTEM','',now());
 insert into fms_config values(1,1,5, 'mon',  0, now());
 insert into fms_config values(2,1,5, 'ssh',  0,   now());
