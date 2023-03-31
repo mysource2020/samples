@@ -4,6 +4,6 @@ mmapv2 demo packet mmap v2, this is a recv implementation of ubuntu.
 
 mmapv3 demo packet mmap v3, this is a recv implementation of ubuntu.
 
-ffsler demo capturing nic raw packet, analyse、match domain and redirect to proper web page or 404 page.
+firefilter demo capturing nic raw packet, analyse、match domain and redirect to proper web page or 404 page.
  
  You are welcome to adopt the library if you find it useful.
