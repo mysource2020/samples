@@ -39,7 +39,7 @@ firefilter configuration:
    root@ubuntu:/usr/share# rm -rf web.zip
    
    #startup tomcat 9
-   root@ubuntu:/usr/share#   /usr/share/tomcat9/bin/startup.sh   
+   root@ubuntu:/usr/share# /usr/share/tomcat9/bin/startup.sh   
    
    #firewall: open port 1789
    
