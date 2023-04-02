@@ -26,28 +26,20 @@ firefilter configuration:
    root@ubuntu:~# cd /usr/share/tomcat9
    root@ubuntu:/usr/share/tomcat9# mkdir logs
    root@ubuntu:/usr/share/tomcat9# cp -rf etc conf
-   
-   #modify server.xml, eg: server.xml, modify ip, port. (10.12.158.59, 1789)   
-   root@ubuntu:/usr/share/tomcat9# cd conf
-   root@ubuntu:/usr/share/tomcat9/conf# killall -9 java
-   root@ubuntu:/usr/share/tomcat9/conf# rm -rf server.xml
-   root@ubuntu:/usr/share/tomcat9/conf# vi server.xml
-   root@ubuntu:/usr/share/tomcat9/conf# cd ..
    root@ubuntu:/usr/share/tomcat9# rm -rf ./work/Catalina/*
    root@ubuntu:/usr/share/tomcat9# rm -rf ./logs/*
    
-   #download web.zip to /usr/share/web.zip (wget https://github.com/mysource2020/samples/blob/main/firefilter/web.zip)
+   #modify template file server.xml (ip, port), upload to /usr/share/tomcat9/conf/server.xml   
+   #firewall: open port
    
+   #upload web.zip to /usr/share/web.zip   
    root@ubuntu:/usr/share/tomcat9# cd /usr/share
-   root@ubuntu:/usr/share# wget https://github.com/mysource2020/samples/blob/main/firefilter/web.zip
    root@ubuntu:/usr/share# unzip web.zip
    root@ubuntu:/usr/share# rm -rf web.zip
    
    #startup tomcat 9
-   root@ubuntu:/usr/share# /usr/share/tomcat9/bin/startup.sh   
-   
-   #firewall: open port 1789
-   
+   root@ubuntu:/usr/share# killall -9 java
+   root@ubuntu:/usr/share# /usr/share/tomcat9/bin/startup.sh    
    
 5. manager firefilter
    a. enter manager http://10.12.158.59:1789
