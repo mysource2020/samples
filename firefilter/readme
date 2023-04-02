@@ -13,14 +13,16 @@ firefilter configuration:
    root@ubuntu:~# apt install net-tools
    root@ubuntu:~# apt install unzip
    
-3. setup mysql
+3. browse https://github.com/mysource2020/samples, Code -> Download ZIP, download project to local.    
+
+4. setup mysql
    root@ubuntu:~# apt install  mysql-server
    root@ubuntu:~# mysql -u root -p
    
    #run sql in db.sql, modify init user/password.
    #insert into fms_user(id,name,password) values(1, 'test', '123456');
    
-4. setup tomcat9   
+5. setup tomcat9   
    root@ubuntu:~# apt-get install tomcat9-admin
    root@ubuntu:~# apt-get install tomcat9
    root@ubuntu:~# cd /usr/share/tomcat9
@@ -41,13 +43,13 @@ firefilter configuration:
    root@ubuntu:/usr/share# killall -9 java
    root@ubuntu:/usr/share# /usr/share/tomcat9/bin/startup.sh    
    
-5. manager firefilter
+6. manager firefilter
    a. enter manager http://10.12.158.59:1789
    b. upload file ffslercr
    c. config system param and group list.
    d. startup program
    
-6. test url redirect.   
+7. test url redirect.   
 
    
    
