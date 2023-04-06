@@ -48,7 +48,7 @@ firefilter configuration:
 6. manager firefilter
    a. enter manager http://10.12.158.59:1789
    b. upload program,  choice file "samples-main\firefilter\ffslercr" 
-   c. config system param and group list.
+   c. config system param and group list, click "update to server".
    d. startup program
    
 7. test url redirect.   
