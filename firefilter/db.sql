@@ -1,4 +1,4 @@
-mysql -u root -p
+#mysql -u root -p
 
 create user fmsuser identified by 'qazxsw12';
 grant all on *.* to 'fmsuser'@'%';
@@ -33,7 +33,7 @@ create table fms_config
 (
 	id         INT PRIMARY KEY,
 	group_id   INT  not null,         
-      type       INT not null,            
+        type       INT not null,            
 	source     VARCHAR(100) not null,   
 	target     VARCHAR(100) default '', 
 	create_time     DATETIME           
