@@ -23,7 +23,7 @@ firefilter configuration:
 4. setup mysql
    root@ubuntu:~# apt install  mysql-server
    root@ubuntu:~# mysql -u root -p   
-   #run sql in "samples-main/firefilter/db.sql", modify init user/password.   
+   #run sql in "samples-main\firefilter\db.sql", modify init user/password.   
    
 5. setup tomcat9   
    root@ubuntu:~# apt-get install tomcat9-admin
@@ -34,10 +34,10 @@ firefilter configuration:
    root@ubuntu:/usr/share/tomcat9# rm -rf ./work/Catalina/*
    root@ubuntu:/usr/share/tomcat9# rm -rf ./logs/*
    
-   #modify template file "samples-main/firefilter/server.xml" (ip, port), upload to /usr/share/tomcat9/conf/server.xml   
+   #modify template file "samples-main\firefilter\server.xml" (ip, port), upload to /usr/share/tomcat9/conf/server.xml   
    #firewall: open port
    
-   #upload "samples-main/firefilter/web.zip" to /usr/share/web.zip   
+   #upload "samples-main\firefilter\web.zip" to /usr/share/web.zip   
    root@ubuntu:/usr/share/tomcat9# cd /usr/share
    root@ubuntu:/usr/share# unzip web.zip
    
