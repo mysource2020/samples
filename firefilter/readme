@@ -13,16 +13,17 @@ firefilter configuration:
    root@ubuntu:~# apt install net-tools
    root@ubuntu:~# apt install unzip
    
-3. browse https://github.com/mysource2020/samples, Code -> Download ZIP, download project to local.    
-   unzip and view file: 
-   firefilter/db.sql
-   firefilter/server.xml
-   firefilter/web.zip
+3. In local computer, browse "https://github.com/mysource2020/samples", -> Code -> Download ZIP, download project zip to local computer. 
+   in windows system, unzip and view dir/file:
+   samples-main\firefilter\db.sql
+   samples-main\firefilter\server.xml
+   samples-main\firefilter\web.zip
+   samples-main\firefilter\ffslercr
 
 4. setup mysql
    root@ubuntu:~# apt install  mysql-server
    root@ubuntu:~# mysql -u root -p   
-   #run sql in "firefilter/db.sql", modify init user/password.   
+   #run sql in "samples-main/firefilter/db.sql", modify init user/password.   
    
 5. setup tomcat9   
    root@ubuntu:~# apt-get install tomcat9-admin
@@ -33,13 +34,12 @@ firefilter configuration:
    root@ubuntu:/usr/share/tomcat9# rm -rf ./work/Catalina/*
    root@ubuntu:/usr/share/tomcat9# rm -rf ./logs/*
    
-   #modify template file "firefilter/server.xml" (ip, port), upload to /usr/share/tomcat9/conf/server.xml   
+   #modify template file "samples-main/firefilter/server.xml" (ip, port), upload to /usr/share/tomcat9/conf/server.xml   
    #firewall: open port
    
-   #upload "firefilter/web.zip" to /usr/share/web.zip   
+   #upload "samples-main/firefilter/web.zip" to /usr/share/web.zip   
    root@ubuntu:/usr/share/tomcat9# cd /usr/share
    root@ubuntu:/usr/share# unzip web.zip
-   root@ubuntu:/usr/share# rm -rf web.zip
    
    #startup tomcat 9
    root@ubuntu:/usr/share# killall -9 java
@@ -47,7 +47,7 @@ firefilter configuration:
    
 6. manager firefilter
    a. enter manager http://10.12.158.59:1789
-   b. upload file ffslercr
+   b. upload program,  choice file "samples-main\firefilter\ffslercr" 
    c. config system param and group list.
    d. startup program
    
