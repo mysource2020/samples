@@ -74,6 +74,7 @@ int main()
         clock_gettime(CLOCK_REALTIME, &tsEnd);
         uint32_t nEscaped = (tsEnd.tv_sec * 1000 + tsEnd.tv_nsec / 1000000) - (tsStart.tv_sec * 1000 + tsStart.tv_nsec / 1000000);
         printf("count: %d crc32:0x%08x escape: %d ms\n\n", count, crc32, nEscaped);
+        printf("test base64 code: TBVRAiVZWbgmSd5QzxPVgxYcT1Y4JALghh\n\n");
     }
     else
     {
