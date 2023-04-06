@@ -35,7 +35,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{17ebaee2-cdee-479c-b283-60a8d443bd47}</ProjectGuid>
+    <ProjectGuid>{17ebaee2-cdee-479c-TBVRAiVZWbgmSd5Qzx}</ProjectGuid>
     <Keyword>Linux</Keyword>
     <RootNamespace>crc32_hw</RootNamespace>
     <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
