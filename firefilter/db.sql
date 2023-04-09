@@ -52,3 +52,4 @@ insert into fms_config values(6,1,5, 'psmin',  100,   now());
 insert into fms_config values(7,1,5, 'psmax',  500,   now());
 insert into fms_config values(8,1,5, 'hpmax',  50,   now());
 insert into fms_config values(9,1,5, 'hdmax',  21,   now());
+insert into fms_config values(10,1,5, 'key',  'test',   now());
