@@ -35,7 +35,7 @@ create table fms_config
 	group_id   INT  not null,         
         type       INT not null,            
 	source     VARCHAR(100) not null,   
-	target     VARCHAR(100) default '', 
+	target     VARCHAR(150) default '', 
 	create_time     DATETIME           
 );
 
